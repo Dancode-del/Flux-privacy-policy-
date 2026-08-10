@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Privacy Policy for Flux Browser">
+    <meta name="theme-color" content="#0a0a0a">
+
+    <title>Flux — Privacy Policy</title>
+
+    <style>
+        :root {
+            --bg: #f5f5f5;
+            --surface: #ffffff;
+            --surface-soft: #fafafa;
+            --text: #111111;
+            --muted: #666666;
+            --border: #e6e6e6;
+            --accent: #111111;
+            --accent-text: #ffffff;
+            --shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+        }
+
+        /* Header */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: auto;
+            padding: 18px 24px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            font-weight: 800;
+            font-size: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .logo {
+            width: 38px;
+            height: 38px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #111;
+            color: white;
+
+            border-radius: 11px;
+
+            font-size: 19px;
+            font-weight: 900;
+        }
+
+        .header-label {
+            color: var(--muted);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Hero */
+
+        .hero {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 24px 55px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            background: #eaeaea;
+            color: #333;
+
+            padding: 7px 13px;
+            border-radius: 999px;
+
+            font-size: 13px;
+            font-weight: 600;
+
+            margin-bottom: 22px;
+        }
+
+        .badge-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #111;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 7vw, 72px);
+            line-height: 1.02;
+            letter-spacing: -3px;
+            max-width: 800px;
+            margin-bottom: 24px;
+        }
+
+        .hero-description {
+            max-width: 720px;
+            color: var(--muted);
+            font-size: 18px;
+        }
+
+        .updated {
+            margin-top: 25px;
+
+            display: inline-block;
+
+            padding: 9px 14px;
+
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        /* Layout */
+
+        .layout {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 24px 70px;
+
+            display: grid;
+            grid-template-columns: 230px 1fr;
+            gap: 35px;
+            align-items: start;
+        }
+
+        /* Sidebar */
+
+        .sidebar {
+            position: sticky;
+            top: 90px;
+        }
+
+        .sidebar-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .sidebar a {
+            display: block;
+
+            padding: 7px 10px;
+
+            color: #777;
+            text-decoration: none;
+
+            font-size: 13px;
+
+            border-radius: 7px;
+
+            transition: 0.2s ease;
+        }
+
+        .sidebar a:hover {
+            background: #eaeaea;
+            color: #111;
+        }
+
+        /* Policy */
+
+        .policy {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+
+            padding: clamp(25px, 5vw, 55px);
+
+            box-shadow: var(--shadow);
+        }
+
+        .intro {
+            background: var(--surface-soft);
+            border: 1px solid var(--border);
+
+            border-radius: 14px;
+
+            padding: 22px;
+
+            margin-bottom: 40px;
+
+            color: #444;
+        }
+
+        .section {
+            padding: 30px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+            padding-bottom: 5px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            letter-spacing: -0.5px;
+            margin-bottom: 15px;
+        }
+
+        .section h3 {
+            font-size: 16px;
+            margin-top: 22px;
+            margin-bottom: 8px;
+        }
+
+        .section p {
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .section ul {
+            margin: 12px 0 18px 22px;
+            color: #444;
+        }
+
+        .section li {
+            margin: 5px 0;
+            padding-left: 4px;
+        }
+
+        /* Email */
+
+        .contact-box {
+            margin-top: 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+
+            padding: 20px;
+
+            background: #111;
+            color: white;
+
+            border-radius: 14px;
+        }
+
+        .contact-box strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .contact-box span {
+            color: #aaa;
+            font-size: 13px;
+        }
+
+        .email {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            word-break: break-word;
+        }
+
+        .email:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+
+        footer {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 24px 45px;
+
+            color: #888;
+            font-size: 13px;
+
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            border-top: 1px solid var(--border);
+        }
+
+        /* Mobile */
+
+        @media (max-width: 800px) {
+
+            .header-label {
+                display: none;
+            }
+
+            .hero {
+                padding-top: 55px;
+            }
+
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+
+            .layout {
+                display: block;
+            }
+
+            .sidebar {
+                display: none;
+            }
+
+            .policy {
+                border-radius: 16px;
+            }
+
+            .contact-box {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            footer {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .header-inner {
+                padding: 14px 18px;
+            }
+
+            .hero,
+            .layout {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero-description {
+                font-size: 16px;
+            }
+
+            .policy {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+
+        <div class="brand">
+            <div class="logo">F</div>
+            <span>Flux</span>
+        </div>
+
+        <div class="header-label">
+            Privacy Policy
+        </div>
+
+    </div>
+</header>
+
+
+<section class="hero">
+
+    <div class="badge">
+        <span class="badge-dot"></span>
+        Privacy & Security
+    </div>
+
+    <h1>Privacy Policy</h1>
+
+    <p class="hero-description">
+        Your privacy matters. Here's how Flux handles information when
+        you use the Flux browser.
+    </p>
+
+    <div class="updated">
+        Last updated: <strong>August 10, 2026</strong>
+    </div>
+
+</section>
+
+
+<div class="layout">
+
+    <!-- Navigation -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-title">
+            On this page
+        </div>
+
+        <a href="#information">1. Information We Collect</a>
+        <a href="#advertising">2. Advertising</a>
+        <a href="#websites">3. Third-Party Websites</a>
+        <a href="#search">4. Search Engines</a>
+        <a href="#cookies">5. Cookies & Storage</a>
+        <a href="#permissions">6. Permissions</a>
+        <a href="#use">7. How We Use Information</a>
+        <a href="#security">8. Data Storage & Security</a>
+        <a href="#sharing">9. Data Sharing</a>
+        <a href="#children">10. Children's Privacy</a>
+        <a href="#choices">11. Your Choices</a>
+        <a href="#retention">12. Data Retention</a>
+        <a href="#transfers">13. International Transfers</a>
+        <a href="#changes">14. Changes</a>
+        <a href="#contact">15. Contact</a>
+        <a href="#third-party">16. Third-Party Services</a>
+
+    </aside>
+
+
+    <!-- Policy -->
+
+    <main class="policy">
+
+        <div class="intro">
+            Flux ("we", "our", or "the App") respects your privacy.
+            This Privacy Policy explains what information Flux may collect,
+            how that information is used, stored, and shared, and the choices
+            available to you when using the Flux browser.
+
+            <br><br>
+
+            By using Flux, you agree to the practices described in this
+            Privacy Policy.
+        </div>
+
+
+        <section class="section" id="information">
+
+            <h2>1. Information We Collect</h2>
+
+            <p>
+                Flux is designed to minimize the amount of personal
+                information it collects.
+            </p>
+
+            <h3>1.1 Browsing Information</h3>
+
+            <p>
+                Flux allows you to visit websites and interact with online
+                content. Depending on how the App is configured and the
+                websites you visit, information such as:
+            </p>
+
+            <ul>
+                <li>Website addresses (URLs)</li>
+                <li>Search queries entered into websites or search engines</li>
+                <li>Browsing history</li>
+                <li>Cookies and website data</li>
+                <li>Login sessions and website preferences</li>
+            </ul>
+
+            <p>
+                may be processed by the websites you visit or stored locally
+                by the browser.
+            </p>
+
+            <p>
+                Flux does not intentionally collect or sell your complete
+                browsing history to us or to third parties.
+            </p>
+
+            <h3>1.2 Bookmarks</h3>
+
+            <p>
+                If you save websites as bookmarks, the bookmark information
+                may be stored locally on your device.
+            </p>
+
+            <p>This may include:</p>
+
+            <ul>
+                <li>Website title</li>
+                <li>Website URL</li>
+                <li>Bookmark folders or categories</li>
+            </ul>
+
+            <p>
+                Bookmarks are not intentionally transmitted to us unless a
+                future Flux feature specifically states otherwise.
+            </p>
+
+            <h3>1.3 Downloads</h3>
+
+            <p>
+                Flux may allow you to download files from websites.
+                Downloaded files are stored on your device according to your
+                device's storage settings and the permissions granted to Flux.
+            </p>
+
+            <p>
+                Flux does not automatically upload your downloaded files to
+                our servers.
+            </p>
+
+            <h3>1.4 App and Technical Information</h3>
+
+            <p>
+                Depending on the services and SDKs included in the version
+                of Flux you use, certain technical information may be
+                processed, such as:
+            </p>
+
+            <ul>
+                <li>Device type and operating system</li>
+                <li>App version</li>
+                <li>General diagnostic information</li>
+                <li>Crash information</li>
+                <li>IP address</li>
+                <li>Approximate location derived from IP address</li>
+                <li>Advertising identifiers</li>
+                <li>Information about interactions with advertisements</li>
+            </ul>
+
+            <p>
+                This information may be collected by third-party services
+                used by Flux rather than directly by Flux.
+            </p>
+
+        </section>
+
+
+        <section class="section" id="advertising">
+
+            <h2>2. Advertising</h2>
+
+            <p>
+                Flux may display advertisements provided by third-party
+                advertising providers.
+            </p>
+
+            <p>Advertising providers may collect or process information such as:</p>
+
+            <ul>
+                <li>Advertising ID</li>
+                <li>Device information</li>
+                <li>IP address</li>
+                <li>Approximate location</li>
+                <li>Ad interaction information</li>
+                <li>Diagnostic information</li>
+            </ul>
+
+            <p>
+                This information may be used to provide, measure, and improve
+                advertising.
+            </p>
+
+            <p>
+                Third-party advertising providers have their own privacy
+                policies governing their processing of information.
+            </p>
+
+            <p>
+                Flux does not control how independent advertising providers
+                process information.
+            </p>
+
+        </section>
+
+
+        <section class="section" id="websites">
+
+            <h2>3. Third-Party Websites</h2>
+
+            <p>
+                Flux is a web browser, so you can access websites operated
+                by third parties.
+            </p>
+
+            <p>
+                Websites you visit through Flux may independently collect
+                information about you, including cookies, IP addresses,
+                account information, browsing activity, or other information.
+            </p>
+
+            <p>
+                Flux is not responsible for the privacy practices, content,
+                security, or policies of third-party websites.
+            </p>
+
+            <p>
+                We recommend reviewing the privacy policy of any website you
+                visit if you have concerns about how that website handles
+                your information.
+            </p>
+
+        </section>
+
+
+        <section class="section" id="search">
+
+            <h2>4. Search Engines</h2>
+
+            <p>
+                When you perform a search through a search engine using Flux,
+                your search query may be sent directly to that search engine.
+            </p>
+
+            <p>
+                The search engine may collect and process your search query,
+                IP address, device information, cookies, and other information
+                according to its own privacy policy.
+            </p>
+
+            <p>
+                Flux does not control the information collected by search
+                engines.
+            </p>
+
+        </section>
+
+
+        <section class="section" id="cookies">
+
+            <h2>5. Cookies and Website Storage</h2>
+
+            <p>
+                Websites accessed through Flux may use cookies, local storage,
+                session storage, cache, and similar technologies.
+            </p>
+
+            <p>These technologies may be used to:</p>
+
+            <ul>
+                <li>Keep you signed in</li>
+                <li>Remember website preferences</li>
+                <li>Maintain shopping carts or sessions</li>
+                <li>Provide website functionality</li>
+                <li>Measure website usage</li>
+                <li>Deliver personalized content or advertising</li>
+            </ul>
+
+            <p>
+                Flux may store website data locally on your device to provide
+                browser functionality.
+            </p>
+
+            <p>
+                You can manage or clear browser data using the controls
+                provided within Flux, where available.
+            </p>
+
+        </section>
+
+
+        <section class="section" id="permissions">
+
+            <h2>6. Permissions</h2>
+
+            <p>
+                Flux may request Android permissions necessary for specific
+                features.
+            </p>
+
+            <p>
+                For example, storage-related permissions may be required to
+                save downloaded files on devices or Android versions where
+                such permissions are applicable.
+            </p>
+
+            <p>
+                Flux only requests permissions that are necessary for the
+                functionality provided by the App.
+            </p>
+
+            <p>
+                You can manage app permissions through your Android device's
+                settings.
+            </p>
+
+        </section>
+
+
+        <section class="section" id="use">
+
+            <h2>7. How We Use Information</h2>
+
+            <p>
+                Information processed in connection with Flux may be used to:
+            </p>
+
+            <ul>
+                <li>Provide and operate the browser</li>
+                <li>Load and display websites</li>
+                <li>Save bookmarks and browser preferences</li>
+                <li>Manage downloads</li>
+                <li>Improve app performance</li>
+                <li>Detect and diagnose crashes or technical problems</li>
+                <li>Maintain security</li>
+                <li>Display and measure advertisements</li>
+                <li>Comply with applicable laws and legal requirements</li>
+            </ul>
+
+            <p>
+                We do not sell your personal information as a standalone
+                product.
+            </p>
+
+        </section>
+
+
+        <section class="section" id="security">
+
+            <h2>8. Data Storage and Security</h2>
+
+            <p>
+                Some browser information, including bookmarks, cookies,
+                cached website data, browsing-related data, and downloaded
+                files, may be stored locally on your device.
+            </p>
+
+            <p>
+                The security of information stored on your device also depends
+                on your device's security settings, operating system, lock
+                screen, and other protections.
+            </p>
+
+            <p>
+                While we take reasonable measures to protect information
+                processed by Flux and its supporting services, no method of
+                electronic storage or transmission is completely secure.
+            </p>
+
+        </section>
+
+
+        <section class="section" id="sharing">
+
+            <h2>9. Data Sharing</h2>
+
+            <p>
+                Flux may rely on third-party service providers to provide
+                certain functionality, including advertising, analytics,
+                crash reporting, hosting, or other technical services.
+            </p>
+
+            <p>
+                Where applicable, these providers may process limited
+                technical information necessary to provide their services.
+            </p>
+
+            <p>We may also disclose information when required to:</p>
+
+            <ul>
+                <li>Comply with applicable laws or regulations</li>
+                <li>Respond to valid legal requests</li>
+                <li>Protect the rights, safety, and security of Flux, our users, or others</li>
+                <li>Detect or prevent fraud, abuse, or security problems</li>
+            </ul>
+
+        </section>
+
+
+        <section class="section" id="children">
+
+            <h2>10. Children's Privacy</h2>
+
+            <p>
+                Flux is not intended to knowingly collect personal information
+                from children.
+            </p>
+
+            <p>
+                We do not knowingly request or collect personal information
+                from children for the purpose of creating user profiles or
+                selling personal information.
+            </p>
+
+            <p>
+                If you believe that a child has provided personal information
+                to us, please contact us so that we can take appropriate action.
+            </p>
+
+        </section>
+
+
+        <section class="section" id="choices">
+
+            <h2>11. Your Choices</h2>
+
+            <p>
+                Depending on the features available in your version of Flux,
+                you may be able to:
+            </p>
+
+            <ul>
+                <li>Clear browsing history</li>
+                <li>Clear cookies and website data</li>
+                <li>Clear cached data</li>
+                <li>Delete bookmarks</li>
+                <li>Delete downloaded files</li>
+                <li>Disable or manage certain permissions</li>
+                <li>Reset browser data</li>
+                <li>Control advertising preferences through Android or applicable third-party services</li>
+            </ul>
+
+            <p>
+                You may also uninstall Flux at any time.
+            </p>
+
+        </section>
+
+
+        <section class="section" id="retention">
+
+            <h2>12. Data Retention</h2>
+
+            <p>
+                Information stored locally by Flux generally remains on your
+                device until you delete it, clear the relevant browser data,
+                or uninstall the App.
+            </p>
+
+            <p>
+                Information processed by third-party services is retained
+                according to the policies of those services.
+            </p>
+
+            <p>
+                We retain information only for as long as reasonably necessary
+                for the purposes described in this Privacy Policy or as
+                required by applicable law.
+            </p>
+
+        </section>
+
+
+        <section class="section" id="transfers">
+
+            <h2>13. International Data Transfers</h2>
+
+            <p>
+                Third-party service providers used by Flux may process
+                information on servers located in countries other than your
+                country of residence.
+            </p>
+
+            <p>
+                Where applicable, such providers are responsible for
+                implementing appropriate safeguards for international data
+                transfers in accordance with applicable law.
+            </p>
+
+        </section>
+
+
+        <section class="section" id="changes">
+
+            <h2>14. Changes to This Privacy Policy</h2>
+
+            <p>
+                We may update this Privacy Policy from time to time to reflect
+                changes to Flux, our services, or applicable legal requirements.
+            </p>
+
+            <p>
+                When changes are made, the "Last Updated" date at the beginning
+                of this Privacy Policy will be updated.
+            </p>
+
+            <p>
+                We encourage you to review this Privacy Policy periodically.
+            </p>
+
+        </section>
+
+
+        <section class="section" id="contact">
+
+            <h2>15. Contact Us</h2>
+
+            <p>
+                If you have questions, concerns, or requests regarding this
+                Privacy Policy or Flux's privacy practices, you can contact us
+                at:
+            </p>
+
+            <div class="contact-box">
+
+                <div>
+                    <strong>Flux Support</strong>
+                    <span>Questions about privacy or the app?</span>
+                </div>
+
+                <a
+                    class="email"
+                    href="mailto:fluxsupport2@gmail.com"
+                >
+                    fluxsupport2@gmail.com
+                </a>
+
+            </div>
+
+            <p style="margin-top:20px;">
+                <strong>App:</strong> Flux
+            </p>
+
+        </section>
+
+
+        <section class="section" id="third-party">
+
+            <h2>16. Third-Party Services</h2>
+
+            <p>
+                Flux may use third-party services that have their own privacy
+                policies.
+            </p>
+
+            <p>
+                Examples may include advertising, analytics, crash-reporting,
+                hosting, or other technology providers.
+            </p>
+
+            <p>
+                The specific third-party services used may vary between
+                versions of Flux. Their respective privacy policies govern
+                their processing of information.
+            </p>
+
+        </section>
+
+
+        <div style="
+            margin-top:40px;
+            padding-top:25px;
+            border-top:1px solid #e6e6e6;
+            color:#888;
+            font-size:13px;
+            text-align:center;
+        ">
+            End of Privacy Policy
+        </div>
+
+    </main>
+
+</div>
+
+
+<footer>
+
+    <span>© 2026 Flux Browser</span>
+
+    <span>
+        Privacy Policy
+    </span>
+
+</footer>
+
+</body>
+</html>
